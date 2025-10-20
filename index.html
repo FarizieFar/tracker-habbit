@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-blue-500 to-indigo-600 flex flex-col items-center p-6 transition-colors duration-500">
+
+  <!-- Header -->
+  <div class="flex justify-between items-center w-full max-w-lg mb-6">
+    <h1 class="text-3xl font-bold text-white">🚀 Task Manager</h1>
+    <button id="themeToggle" class="text-white hover:text-yellow-300">
+      <i data-lucide="moon"></i>
+    </button>
+  </div>
+
+  <!-- Card Container -->
+  <div id="taskCard" class="w-full max-w-lg bg-white rounded-2xl shadow-2xl p-6 space-y-4 transition-all duration-500">
+    <div class="flex gap-2">
+      <input id="taskInput" type="text" placeholder="Tambahkan tugas baru..." class="flex-1 border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <button id="addTaskBtn" class="bg-blue-600 text-white px-4 rounded-lg hover:bg-blue-700">Tambah</button>
+    </div>
+    <ul id="taskList" class="space-y-3 mt-4"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
