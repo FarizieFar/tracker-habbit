@@ -10,7 +10,7 @@ let darkMode = JSON.parse(localStorage.getItem("darkMode")) || false;
 function renderTasks() {
   taskList.innerHTML = "";
   if (tasks.length === 0) {
-    taskList.innerHTML = `<p class="text-gray-500 text-center">Belum ada tugas ✨</p>`;
+    taskList.innerHTML = `<p class="text-gray-500 text-center">Belum ada tugas</p>`;
     return;
   }
 
